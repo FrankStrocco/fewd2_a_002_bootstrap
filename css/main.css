@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     background-color: #332619;
+    font-family: sans-serif;
 
 }
 .navbar {
@@ -84,9 +85,57 @@ button[aria-expanded="true"] .nav-item .nav-link{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Freckle Face", serif;
-    color: white;
+    color: #333;
 }
 .sharkHeader .container .row header h1 #headOne {
     font-family: "Freckle Face", serif;
     color: white;
+}
+main {
+    background-color: #fff;
+
+}
+
+.figure-img figcaption{
+    font-size: 10px;
+}
+.hornSharkImg {
+    margin: 0;
+    padding: 0;
+}
+
+#sharkPic {
+    padding: 0!important;
+}
+.char1 {
+    margin: 15px;
+    padding: 15px;
+}
+.char1 h1 {
+    padding: 10px 0;
+}
+.char1 h2 {
+    color: #3B8686;
+}
+.side {
+    background-color: #3B8686;
+}
+.side h2 {
+    color: #fff;
+    margin: 15px 0;
+}
+.side #fast {
+    border-bottom: 1px solid white;
+
+}
+.side h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.side p {
+    color: #fff;
+}
+.page-footer {
+    background-color: #7bb8a5;
+    padding-top: 8px;
 }
