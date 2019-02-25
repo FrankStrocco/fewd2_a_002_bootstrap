@@ -29,19 +29,20 @@ html, body {
   color: #444;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: white;
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #0f6674 !important;
+}
+.active {
+    background-color: #9ed3c2;
+    color: #444!important;
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: #7bb8a5;
+  color: #777;
 }
 
 .bg-dark {
     background-color: #7bb8a5!important;
-}
-.navbar-toggler-icon {
-
 }
 .navbar-toggler {
     background-color: #fff;
@@ -51,6 +52,16 @@ html, body {
     color: black!important;
     width: 50px;
 }
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #0f6674 !important;
+  background-color: #9ed3c2;
+}
+.nav-link.active {
+
+}
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128,128,128, 0.5)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -59,13 +70,23 @@ html, body {
 .custom-toggler.navbar-toggler {
   border-color: #ccc;
 }
+button[aria-expanded="true"] .nav-item .nav-link{
+    color: white !important;
+}
  /* Header  */
 
 .sharkHeader {
     margin-top: 1px;
     background-color: #7bb8a5;
+    font-family: "Freckle Face", serif;
+    font-size: 4.0rem;
 }
-#headOne h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Freckle Face", serif;
+    color: white;
+}
+.sharkHeader .container .row header h1 #headOne {
     font-family: "Freckle Face", serif;
     color: white;
 }
